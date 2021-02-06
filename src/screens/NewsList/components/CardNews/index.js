@@ -1,8 +1,13 @@
-import React from 'react'
-import CardContent from '../../../../components/CardContent'
+import React from 'react';
+import CardContent from '../../../../components/CardContent';
 
 export default function CardNews(props) {
-  return (
-    <CardContent buttonText="Acessar" {...props}/>
-  )
+	return (
+		<CardContent
+			maxWidth={[ 'size-general-md', 'size-general-md', 'size-general-lg' ]}
+			mb="spacing-stack-xxxs"
+			buttonText="Acessar"
+			{...props}
+		/>
+	);
 }

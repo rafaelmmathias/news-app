@@ -1,25 +1,32 @@
 import React from 'react';
 import CardNews from './components/CardNews';
 import { useFetch } from '../../hooks/useFetch';
+import Box from '../../components/Box';
 
 export default function NewsList() {
 	const { data, error } = useFetch(
 		`http://newsapi.org/v2/top-headlines?country=br&category=business&apiKey=7d063102466648faaec3577feb211131&pageSize=10`
 	);
 
-	console.log(data);
+	const onOpenNews = (news) => {
+		window.open(news.url, '_blank');
+	};
+	
 	return (
-		<div>
-			<CardNews
-				actionButtonProps={{
-					onClick: () => {
-						console.log('xx123');
-					}
-				}}
-				title="Heading SM"
-				subtitle="Subtitle SM"
-				text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-			/>
-		</div>
+		<Box display="flex" flexDirection="column" alignItems="center" justifyContent="center">
+			{data &&
+				data.articles.map((news) => (
+					<CardNews
+						actionButtonProps={{
+							onClick: () => {
+								onOpenNews(news);
+							}
+						}}
+						title={news.title}
+						subtitle={news.description}
+						text={news.content}
+					/>
+				))}
+		</Box>
 	);
 }

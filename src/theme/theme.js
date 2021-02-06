@@ -2,7 +2,7 @@ import * as tokens from "design-tokens";
 
 const theme = {
   borderStyles: {
-    solid: 'solid'
+    "border-style-01": 'solid'
   },
   breakpoints: ['40em', '52em', '64em', '65em'],
   borderWidths:{
@@ -52,6 +52,11 @@ const theme = {
   },
   radii:{
     "border-radius-none": tokens.BORDER_RADIUS_NONE
+  },
+  sizes:{
+    "size-general-sm": "200px",
+    "size-general-md": "350px",
+    "size-general-lg": "600px",
   },
   shadows:{
     "shadow-level-01-x":tokens.SHADOW_LEVEL_1_X,
