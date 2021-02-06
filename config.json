@@ -1,0 +1,15 @@
+{
+  "source": ["tokens.json"],
+  "platforms": {
+    "web": {
+      "transforms": ["size/px", "name/cti/constant"],
+      "transformGroup": "javascript",
+      "buildPath": "dist/",
+      "files": [{
+        "format": "javascript/es6",
+        "destination": "index.js"
+        
+      }]
+    }
+  }
+}
