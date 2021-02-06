@@ -1,4 +1,4 @@
-import * as tokens from "@news-app/design-tokens";
+import * as tokens from "design-tokens";
 
 const theme = {
   borderStyles: {
