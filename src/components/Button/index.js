@@ -19,7 +19,7 @@ Button.defaultProps = {
   padding: "spacing-squish-xs",
   fontFamily: "font-family-highlight",
   fontWeight: 'font-weight-medium',
-  color: "color-neutral-04",
+  color: "color-neutral-05",
   backgroundColor: "color-brand-primary-03",
   borderWidth: "border-width-none"
 }

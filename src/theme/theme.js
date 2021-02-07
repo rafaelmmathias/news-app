@@ -21,7 +21,9 @@ const theme = {
     "color-neutral-01": tokens.COLOR_NEUTRAL_01,
     "color-neutral-02": tokens.COLOR_NEUTRAL_02,
     "color-neutral-03": tokens.COLOR_NEUTRAL_03,
-    "color-neutral-04": tokens.COLOR_NEUTRAL_04
+    "color-neutral-04": tokens.COLOR_NEUTRAL_04,
+    "color-neutral-05": tokens.COLOR_NEUTRAL_05,
+    "color-neutral-06": '#f5f5f5',
   },
   fonts:{
     "font-family-highlight": "Archivo"
@@ -51,9 +53,15 @@ const theme = {
     "line-height-superdistant": tokens.LINE_HEIGHT_SUPERDISTANT,
   },
   radii:{
-    "border-radius-none": tokens.BORDER_RADIUS_NONE
+    "border-radius-none": tokens.BORDER_RADIUS_NONE,
+    "border-radius-sm": tokens.BORDER_RADIUS_SM,
+    "border-radius-md": tokens.BORDER_RADIUS_MD,
+    "border-radius-lg": tokens.BORDER_RADIUS_LG,
+    "border-radius-pill": tokens.BORDER_RADIUS_PILL,
+    "border-radius-circular": tokens.BORDER_RADIUS_CIRCULAR
   },
   sizes:{
+    "size-general-full": "100%",
     "size-general-sm": "200px",
     "size-general-md": "350px",
     "size-general-lg": "600px",

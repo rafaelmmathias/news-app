@@ -13,6 +13,5 @@ export const HeaderContainer = styled.div`
 
 HeaderContainer.defaultProps = {
   padding: ["spacing-inset-nano", "spacing-inset-sm"],
-  mb: "spacing-stack-xxs",
   bg: 'color-neutral-01'
 }
