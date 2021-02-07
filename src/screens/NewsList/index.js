@@ -23,10 +23,10 @@ export default function NewsList() {
 
 	return (
 		<Box display="flex" flexDirection="column" alignItems="center" justifyContent="center" padding="xxxs">
-			<Box display="flex" width="size-general-full" mb="spacing-stack-nano">
+			<Box display="flex" width="size-general-full" mb="spacing-stack-xxs">
 				<CategoryList categories={categories} selectedCategory={category} onSelect={setCategory} />
 			</Box>
-			<Box display="flex" flexWrap="wrap" justifyContent="center">
+			<Box display="flex" flexWrap="wrap" justifyContent="space-between">
 				{data &&
 					data.articles.map((news) => (
 						<CardNews

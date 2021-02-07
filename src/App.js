@@ -2,13 +2,17 @@ import Layout from './layout';
 import NewsList from './screens/NewsList';
 import ThemeProvider from './theme';
 
+export const RootApp = ({ children }) => (
+	<ThemeProvider>
+		<Layout>{children}</Layout>
+	</ThemeProvider>
+);
+
 function App() {
 	return (
-		<ThemeProvider>
-			<Layout>
-				<NewsList/>
-			</Layout>
-		</ThemeProvider>
+		<RootApp>
+			<NewsList />
+		</RootApp>
 	);
 }
 

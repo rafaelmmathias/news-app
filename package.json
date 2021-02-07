@@ -7,19 +7,21 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "design-tokens": "file:./design-tokens",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
     "react-scripts": "4.0.2",
-    "styled-components": "^5.2.1",
-    "styled-system": "^5.1.5",
-    "swr": "^0.4.1",
-    "web-vitals": "^1.0.1"
+    "styled-components": "5.2.1",
+    "styled-system": "5.1.5",
+    "swr": "0.4.1",
+    "web-vitals": "1.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "visual_test": "loki test",
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -p 6006 -s public",
+    "build-storybook": "build-storybook -s public"
   },
   "eslintConfig": {
     "extends": [
@@ -38,5 +40,29 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@storybook/addon-actions": "6.1.17",
+    "@storybook/addon-essentials": "6.1.17",
+    "@storybook/addon-links": "6.1.17",
+    "@storybook/node-logger": "6.1.17",
+    "@storybook/preset-create-react-app": "3.1.5",
+    "@storybook/react": "6.1.17",
+    "loki": "0.27.0"
+  },
+  "loki": {
+    "configurations": {
+      "chrome.laptop": {
+        "target": "chrome.app",
+        "width": 1366,
+        "height": 768,
+        "deviceScaleFactor": 1,
+        "mobile": false
+      },
+      "chrome.iphone7": {
+        "target": "chrome.app",
+        "preset": "iPhone 7"
+      }
+    }
   }
 }

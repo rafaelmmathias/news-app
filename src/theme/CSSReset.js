@@ -9,7 +9,7 @@ const CSSReset = createGlobalStyle`
     Author: Richard Clark - http://richclarkdesign.com 
     Twitter: @rich_clark
     */
-
+ 
     html, body, div, span, object, iframe,
     h1, h2, h3, h4, h5, h6, p, blockquote, pre,
     abbr, address, cite, code,
@@ -104,6 +104,7 @@ const CSSReset = createGlobalStyle`
     input, select {
         vertical-align:middle;
     }
+    @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&display=swap');
 `
 
 export default CSSReset;

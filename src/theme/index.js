@@ -3,7 +3,7 @@ import CSSReset from './CSSReset';
 import theme from './theme';
 
 
-function App({children, ...rest}) {
+function AppThemeProvider({children, ...rest}) {
 	return (
 		<ThemeProvider theme={theme} {...rest}>
 			<CSSReset  />
@@ -12,4 +12,4 @@ function App({children, ...rest}) {
 	);
 }
 
-export default App;
+export default AppThemeProvider;

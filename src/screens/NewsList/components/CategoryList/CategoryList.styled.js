@@ -26,6 +26,5 @@ export const CategoryOption = styled(Button)`
 `;
 
 CategoryOption.defaultProps = {
-  m: 'spacing-stack-xxxs',
   width: 'size-general-full'
 }

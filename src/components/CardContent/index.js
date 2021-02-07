@@ -8,7 +8,7 @@ const CardContent = ({ title, subtitle, text, buttonText, actionButtonProps, ...
 	return (
 		<Shape {...props}>
 			<Heading mb="spacing-stack-xxxs">{title}</Heading>
-			<Subtitle mb="spacing-stack-xxs">{subtitle}</Subtitle>
+			<Subtitle as="h2" mb="spacing-stack-xxs">{subtitle}</Subtitle>
 			<Paragraph mb="spacing-stack-sm">{text}</Paragraph>
 			<Button {...actionButtonProps}>{buttonText}</Button>
 		</Shape>

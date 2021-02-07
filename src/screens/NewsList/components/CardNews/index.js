@@ -5,7 +5,7 @@ export default function CardNews(props) {
 	return (
 		<CardContent
 			maxWidth={[ 'size-general-sm', 'size-general-sm', 'size-general-md' ]}
-			margin="spacing-stack-xxxs"
+			mb="spacing-stack-xxxs"
 			buttonText="Acessar"
 			{...props}
 		/>
