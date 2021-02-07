@@ -13,6 +13,7 @@ Shape.defaultProps = {
   padding: 'spacing-inset-lg',
   borderWidth: 'border-width-thin',
   borderColor: "color-neutral-04",
+  backgroundColor: "color-neutral-05",
   borderStyle: 'border-style-01'
 }
 
