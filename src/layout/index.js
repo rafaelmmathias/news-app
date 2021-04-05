@@ -4,10 +4,10 @@ import Header from './components/Header';
 import { Container } from './index.styled';
 
 export default function Layout({ children }) {
-	return (
-		<Box>
-			<Header />
-			<Container>{children}</Container>
-		</Box>
-	);
+  return (
+    <Box>
+      <Header />
+      <Container>{children}</Container>
+    </Box>
+  );
 }

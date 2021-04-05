@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-import { color,space, border, position, layout  } from 'styled-system'
+import styled from 'styled-components';
+import { color, space, border, position, layout } from 'styled-system';
 
 const Shape = styled.div`
   ${color}
@@ -7,14 +7,14 @@ const Shape = styled.div`
   ${space}
   ${border}
   ${position}
-`
+`;
 Shape.defaultProps = {
   borderRadius: 'border-radius-none',
   padding: 'spacing-inset-lg',
   borderWidth: 'border-width-thin',
-  borderColor: "color-neutral-04",
-  backgroundColor: "color-neutral-05",
+  borderColor: 'color-neutral-04',
+  backgroundColor: 'color-neutral-05',
   borderStyle: 'border-style-01'
-}
+};
 
-export default Shape
+export default Shape;

@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-import { color, space, border, position, typography  } from 'styled-system'
+import styled from 'styled-components';
+import { color, space, border, position, typography } from 'styled-system';
 
 const Button = styled.button`
   ${color}
@@ -9,19 +9,19 @@ const Button = styled.button`
   ${position}
   outline: none;
   :hover {
-    background-color: ${props=> props.theme.colors["color-brand-primary-02"]}
+    background-color: ${props => props.theme.colors['color-brand-primary-02']};
   }
-`
+`;
 Button.defaultProps = {
-  fontSize: "font-size-sm",
-  lineHeight: "line-height-tight",
-  borderRadius: "border-radius-none",
-  padding: "spacing-squish-xs",
-  fontFamily: "font-family-highlight",
+  fontSize: 'font-size-sm',
+  lineHeight: 'line-height-tight',
+  borderRadius: 'border-radius-none',
+  padding: 'spacing-squish-xs',
+  fontFamily: 'font-family-highlight',
   fontWeight: 'font-weight-medium',
-  color: "color-neutral-05",
-  backgroundColor: "color-brand-primary-03",
-  borderWidth: "border-width-none"
-}
+  color: 'color-neutral-05',
+  backgroundColor: 'color-brand-primary-03',
+  borderWidth: 'border-width-none'
+};
 
-export default Button
+export default Button;

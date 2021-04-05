@@ -3,8 +3,8 @@ import { space } from 'styled-system';
 
 export const Container = styled.div`
   ${space}
-`
+`;
 
 Container.defaultProps = {
-  padding: "spacing-squish-quarck"
-}
+  padding: 'spacing-squish-quarck'
+};

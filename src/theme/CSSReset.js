@@ -1,5 +1,4 @@
-
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from 'styled-components';
 
 const CSSReset = createGlobalStyle`
   /* 
@@ -105,6 +104,6 @@ const CSSReset = createGlobalStyle`
         vertical-align:middle;
     }
     @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&display=swap');
-`
+`;
 
 export default CSSReset;
